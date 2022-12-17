@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minifolio - Developer Portfolio</title>
+    <!-- OUTPUT CSS -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- GOOGLE FONTS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- BOXICON CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="relative bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-50 font-open-sans">
+    <!-- MAIN SECTION START -->
+    <main class="max-w-screen-md mx-auto px-5 py-10">
+        <!-- THEME SECTION START -->
+        <section class="flex items-center justify-end">
+            <div class="h-10 w-10 rounded shadow bg-zinc-50/90 text-sky-500  dark:bg-zinc-800/30 flex items-center justify-center cursor-pointer" id="themeBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" id="moonIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden" id="sunIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>      
+            </div>
+        </section>
+        <!-- THEME SECTION END -->
+
+        <!-- PROFILE SECTION START -->
+        <section class="flex flex-col items-start justify-center py-10 mt-5">
+            <!-- PROFILE CONTENT START -->
+            <figure class="flex items-start justify-start gap-5 w-full">
+                <!-- AVATAR SECTION START -->
+                <div>
+                    <div class="h-14 w-14 rounded-full bg-gradient-to-tr from-indigo-500 to-pink-500">
+                        <img class="rounded-full " src="./image/dp.png" alt="" srcset="">
+                    </div>
+                </div>
+                <!-- AVATAR SECTION END -->
+
+                <div class="flex flex-col items-start gap-5">
+                    <!-- INFO SECTION START -->
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h1 class="text-xl font-medium">Robiuzzaman Ruhan</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 fill-sky-500">
+                                <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                            </svg>      
+                        </div>
+                        <p class="text-md font-medium text-zinc-500">Front-End Developer</p>
+                        <p class="text-md font-medium text-zinc-500">JavaScript | Tailwindcss </p>
+                    </div>
+                    <!-- INFO SECTION END -->
+
+                    <!-- SOCIAL SECTION START -->
+                    <div class="flex items-center justify-center gap-2 text-zinc-500" id="socialSection">
+                        <!-- SOCIAL CARD ARE GENERATE DYNAMICALLY FROM 
+                        👉 'social.js' -->
+                    </div>
+                    <!-- SOCIAL SECTION END -->
+                </div>
+            </figure>
+            <!-- PROFILE CONTENT END -->
+        </section>
+        <!-- PROFILE SECTION END -->
+
+        <!-- BIO SECTION START -->
+        <section class="mb-10">
+            <p class="font-medium">Hi there! <br> I'm Robiuzzaman Ruhan. I'm a Front-End Developer interested in proggramming. Currently learning modern JavaScript. </p>
+        </section>
+        <!-- BIO SECTION END -->
+
+        <!-- TAB BUTTON START -->
+        <section class="px-2 py-7 h-12 w-full sm:w-72 bg-zinc-200/50 dark:bg-zinc-800/30 flex items-center gap-2 rounded-md mb-5 relative">
+            <button class="h-10 w-[50%] rounded-md text-zinc-700 dark:text-zinc-300 font-medium btn-active" id="tabBtn">
+                Skills
+            </button>
+            <button class="h-10 w-[50%] rounded-md text-zinc-700 dark:text-zinc-300 font-medium" id="tabBtn">
+                Repositories
+            </button>    
+        </section>
+        <!-- TAB BUTTON END -->
+        
+        <!-- TAB CONTENT SECTION START -->
+        <section>
+            <!-- SKILLS SECTION START -->
+            <section class="flex flex-col gap-5" id="tabContent">
+                <!-- TITLE -->
+                <h1 class="text-xl font-medium">Skills I've Achived</h1>
+                <figure class="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-6" id="skillsSection">
+                   <!-- SKILLS CARD ARE GENERATE DYNAMICALLY FROM 
+                    👉 'skills.js' -->
+                </figure> 
+            </section>
+            <!-- SKILLS SECTION END -->
+        
+            <!--FEATURED REPOSITORIES START -->
+            <section class="hidden flex-col gap-5" id="tabContent">
+                <!-- TITLE -->
+                <h1 class="text-xl font-medium">Featured Repositories</h1>
+                <figure class="grid grid-cols-1 md:grid-cols-2 gap-4" id="repoSection">
+                    <!-- REPOSITORIES CARD ARE GENERATE DYNAMICALLY FROM 
+                    👉 'repositories.js' -->
+                </figure>     
+            </section>
+            <!-- FEATURED REPOSITORIES END -->
+        </section>
+        <!-- TAB CONTENT SECTION START -->   
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- FOOTER SECTION START -->
+    <footer class="mt-10 py-10 border-t border-zinc-200 dark:border-zinc-800">
+    <div class="max-w-screen-md mx-auto px-5 font-medium text-zinc-500 flex flex-col md:flex-row items-center md:items-start justify-between text-center">
+        <p>© 2023 Minifolio. All rights reserved.</p>
+        <p>Design & Developed By: <a href="https://github.com/robiuzzaman4" target="_blank" class="text-sky-500 hover:underline">@robiuzzaman4</a></p>     
+    </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- JS FILE LINK -->
+    <script src="./javascript/social.js"></script>
+    <script src="./javascript/skills.js"></script>
+    <script src="./javascript/repositories.js"></script>
+    <script src="./javascript/theme.js"></script>
+    <script src="./javascript/main.js"></script>
+
+</body>
+</html>

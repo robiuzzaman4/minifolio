@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    /* FOR ACTIVE TAB BUTTON */
+    .btn-active {
+        @apply bg-zinc-50/90 dark:bg-zinc-800/80 shadow;
+    }
+
+    /* NOTE: DON'T EDIT ANYTHING IN THIS FILE */
+
+    /* badgeClr */
+    /* FOR EXPERT BADGE */
+    .expertClr {
+        @apply text-green-600 dark:text-green-400
+    }
+    /* FOR MID LABEL BADGE */
+    .midClr {
+        @apply text-pink-600 dark:text-pink-400
+    }
+    /* FOR JUNIOR BADGE */
+    .juniorClr {
+        @apply text-amber-600 dark:text-amber-400
+    }
+
+    /* cricleClr */
+    .js-color {
+        @apply bg-yellow-400;
+    }
+    .java-color {
+        @apply bg-amber-600;
+    }
+    .c-plus-color {
+        @apply bg-pink-500;
+    }
+    .c-color {
+        @apply bg-gray-500;
+    }
+    .python-color {
+        @apply bg-sky-600;
+    }
+    .html-color {
+        @apply bg-orange-700;
+    }
+    .css-color {
+        @apply bg-purple-500;
+    }
+    .sass-color {
+        @apply bg-pink-500;
+    }
+}

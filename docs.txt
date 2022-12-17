@@ -1,0 +1,32 @@
+Project Name: Minifolio
+Title: Minifolio - Developer Portfolio
+Author: Md. Robiuzzaman Ruhan
+Version: 1.0.0
+
+Material: 
+1. Font Familly: 'Open Sans' from → https://fonts.google.com/
+2. Social Icons: 'Web Font' from → https://boxicons.com/?query=
+3. Languages Icons: 'Svg' from → https://iconscout.com/
+4. Theme Icons: 'Svg' from → https://heroicons.com/
+
+Tech Stack:
+1. Html
+2. Tailwind Css
+3. Javascript
+
+Installation Guideline: 
+1. Fork this repositoies to your github account
+2. Open Terminal
+3. Run → git clone https://github.com/robiuzzaman4/glyphsy.git 
+4. Run → npm run build
+
+Edit Guideline:
+1. Social Icons Add/Remove: If you want add a social icon, just go to 'social.js' file and add an 'object{}' inside of 'socialData[]'. then edit it's value. Or if you want to remove a social just remove this specific 'object{}'.
+[Note: I used social icons from → https://boxicons.com/?query=   if you put your icon from any other platform, before used you should must add cdn link for this platform on your index.html file]
+
+2. Skills Add/Remove: If you want add a Skills section, just go to 'skills.js' file and add an 'object{}' inside of 'skillsData[]'. then edit it's value. Or if you want to remove a skills just remove this specific 'object{}'.
+[Note: I used 'svg' icon for skills section from → https://iconscout.com/ ]
+
+3. Repositoies Add/Remove: If you want add a repositoies section, just go to 'repositoies.js' file and add an 'object{}' inside of 'repoData[]'. then edit it's value. Or if you want to remove a repositoies just remove this specific 'object{}'.
+
+// *** The End ❤ *** //

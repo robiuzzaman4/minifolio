@@ -1,0 +1,15 @@
+{
+  "name": "minifolio",
+  "version": "1.0.0",
+  "description": "Minifolio - Developer Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./public/src/input.css -o ./public/dist/output.css --watch"
+  },
+  "keywords": ["minifolio", "mini-portfolio", "portfolio", "tailwind","tailwindcss", "tailwindcss-portfolio", "developer-portfolio"],
+  "author": "Md. Robiuzzaman Ruhan",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
