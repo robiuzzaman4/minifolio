@@ -17,7 +17,7 @@ Tech Stack:
 Installation Guideline: 
 1. Fork this repositoies to your github account
 2. Open Terminal
-3. Run → git clone https://github.com/robiuzzaman4/glyphsy.git 
+3. Run → git clone https://github.com/robiuzzaman4/minifolio.git
 4. Run → npm run build
 
 Edit Guideline:
