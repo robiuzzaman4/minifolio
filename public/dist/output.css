@@ -568,9 +568,14 @@ video {
 
 /* cricleClr */
 
-.js-color {
+.javascript-color {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.typescript-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
 }
 
 .java-color {
@@ -578,7 +583,7 @@ video {
   background-color: rgb(217 119 6 / var(--tw-bg-opacity));
 }
 
-.c-plus-color {
+.cpp-color {
   --tw-bg-opacity: 1;
   background-color: rgb(236 72 153 / var(--tw-bg-opacity));
 }
