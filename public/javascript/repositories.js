@@ -1,52 +1,30 @@
 // Repository Section
 const repoSection = document.getElementById("repoSection");
+const githubUsername = "robiuzzaman4"
 
-// Stored Repositories Data
-const repoData = [
-    {
-        id: "A1",
-        title: "minifolio",
-        link: "https://github.com/robiuzzaman4/minifolio", // Your Repositories Link
-        description: "Minifolio - Developer Portfolio",
-        language: "JAVASCRIPT",
-        circleClr: "js-color", // From ./src/input.css
-        star: 1,
-        fork: 0
-    },
-    {
-        id: "A2",
-        title: "qoals-clone",
-        link: "https://github.com/robiuzzaman4/qoals-clone", // Your Repositories Link
-        description: "Qoals-clone is a copyed version of 'qoals.com'. I clone it's with Tailwindcss.",
-        language: "HTML",
-        circleClr: "html-color",
-        star: 1,
-        fork: 0
-    },
-    {
-        id: "A3",
-        title: "glyphsy",
-        link: "https://github.com/robiuzzaman4/glyphsy", // Your Repositories Link
-        description: "Glyphsy - A bundle of glyphs in text formet. incluid of copy to clipbord",
-        language: "CSS",
-        circleClr: "css-color",
-        star: 1,
-        fork: 0
-    },
-    {
-        id: "A4",
-        title: "temcal",
-        link: "https://github.com/robiuzzaman4/temcal", // Your Repositories Link
-        description: "'temcal' is a Temperature Converter which made with JavaScript.",
-        language: "CSS",
-        circleClr: "css-color",
-        star: 1,
-        fork: 0
-    }
-];
+// Load repositories from github
+const fetchRepos = async (callback) => {
+    fetch(`https://api.github.com/users/${githubUsername}/repos?per_page=100`)
+        .then((response) => response.json())
+        .then(data => {
+            const repoData = data.map(repo => {
+                return {
+                    title: repo.name,
+                    link: repo.html_url,
+                    description: repo.description || "",
+                    language: repo.language,
+                    circleClr: `${String(repo.language).toLowerCase().replace("++", "pp")}-color`,
+                    star: repo.stargazers_count,
+                    fork: repo.forks_count
+                }
+            })
+
+            callback(repoData)
+        })
+}
 
 // Generate Repository Card
-const generateRepo = () => {
+const generateRepo = (repoData) => {
     return (repoSection.innerHTML = repoData.map((e) => {
         let {title, description, link, language, circleClr, star, fork} = e; 
         return `
@@ -79,4 +57,4 @@ const generateRepo = () => {
 };
 
 // Invoke Function
-generateRepo();
+fetchRepos(generateRepo)
