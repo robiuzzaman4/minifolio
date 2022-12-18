@@ -27,13 +27,16 @@
     }
 
     /* cricleClr */
-    .js-color {
+    .javascript-color {
         @apply bg-yellow-400;
+    }
+    .typescript-color {
+        @apply bg-sky-600
     }
     .java-color {
         @apply bg-amber-600;
     }
-    .c-plus-color {
+    .cpp-color {
         @apply bg-pink-500;
     }
     .c-color {
